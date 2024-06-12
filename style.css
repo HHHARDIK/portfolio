@@ -1,46 +1,48 @@
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+    padding: 0;
+    margin: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
 }
 
-.header{
+.header {
     width: 100%;
     height: 100vh;
     background-image: url(/img/bg1.jpg);
     background-position: center;
     background-size: cover;
-    background-color: rgb(22, 28, 26)
+    background-color: rgb(22, 28, 26);
 }
 
-.navbar{
+.navbar {
     width: 100%;
     height: 10vh;
     background-color: black;
     opacity: 0.8;
 }
 
-.nav-item{
-    margin: 0px 6px;
+.nav-item {
+    margin: 0 6px;
 }
 
-.nav-link{
-    color: rgba(255,255,255,0.795);
+.nav-link {
+    color: rgba(255, 255, 255, 0.795);
     font-weight: 500;
     font-size: 12px;
     text-transform: uppercase;
 }
 
-.home_section{
+.home_section {
     width: 100%;
     height: 90vh;
     display: flex;
-    align-items: center ;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.heading-sm{
+.heading-sm {
     font-size: 42px;
     color: aliceblue;
     font-weight: 400;
@@ -48,14 +50,14 @@
     margin: -8px 8px;
 }
 
-.heading-lg{
+.heading-lg {
     font-size: 71px;
     color: aliceblue;
     font-weight: 800;
     text-transform: uppercase;
 }
 
-.heading-md{
+.heading-md {
     font-size: 19px;
     color: aliceblue;
     letter-spacing: 3px;
@@ -63,69 +65,120 @@
     margin: -10px 11px;
 }
 
-.para_intro{
+.para_intro {
     margin: 50px 15px 15px 15px;
     color: aliceblue;
 }
 
-.light{
+.light {
     margin: 120px 10px;
     color: rgb(22, 28, 26);
 }
-.about_me{
-    width: 70%;
-    height: 90vh;
+
+.about_me {
+    width: 100%;
+    padding: 5%;
+    text-align: center;
 }
-.about_content{
+
+.about_content {
     letter-spacing: 1.8px;
     word-spacing: 2px;
-    
 }
-.skills{
+
+.skills {
     height: 100vh;
     background-color: rgb(22, 28, 26);
     color: aliceblue;
 }
-#ms{
+
+#ms {
     padding: 100px;
 }
-.card{
-    width: 70%;
+
+.card {
+    width: 100%;
+    margin-bottom: 20px;
 }
-.projects{
+
+.projects {
     height: 100vh;
-    /* margin: 100px; */
     padding: 4% 14%;
 }
-.project{
+
+.project {
     padding: 7%;
 }
-.btn-secondary{
+
+.btn-secondary {
     background-color: rgb(22, 28, 26);
 }
 
-.experience{
+.experience {
     width: 100%;
     height: 100vh;
     padding: 5%;
     background-position: center;
     background-size: cover;
     background-color: rgb(22, 28, 26);
-    color:aliceblue;
+    color: aliceblue;
 }
-.education{
+
+.education {
     width: 100%;
     height: 100vh;
     padding: 5%;
     background-position: center;
     background-size: cover;
     color: rgb(22, 28, 26);
-    }
-.ed{
-    width: 40%;
 }
-.hobbies{
+
+.ed {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.hobbies {
     height: 100vh;
     background-color: rgb(22, 28, 26);
     color: aliceblue;
+}
+
+@media (max-width: 768px) {
+    .heading-sm {
+        font-size: 32px;
+    }
+    
+    .heading-lg {
+        font-size: 56px;
+    }
+
+    .heading-md {
+        font-size: 16px;
+    }
+
+    .para_intro {
+        margin: 30px 10px 10px 10px;
+    }
+
+    .about_me {
+        padding: 10%;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+
+    .projects {
+        padding: 10%;
+    }
+
+    .project {
+        padding: 5%;
+    }
+
+    .skills, .experience, .education, .hobbies {
+        height: auto;
+        padding: 5%;
+    }
 }
